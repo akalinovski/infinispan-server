@@ -18,6 +18,8 @@ RUN mkdir -p $HOME && cd $HOME && curl -o $HOME/infinispan.zip "https://repo1.ma
 
 COPY start.sh /opt/jboss/infinispan-server/bin/
 
+COPY clustered.xml /opt/jboss/infinispan-server/standalone/configuration/
+
 # Expose Infinispan server  ports 
 EXPOSE 57600 7600 8080 8181 9990 11211 11222 
 
