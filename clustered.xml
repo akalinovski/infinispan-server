@@ -174,7 +174,7 @@
                         </binary-keyed-table>
                     </binary-keyed-jdbc-store>
                 </distributed-cache-configuration>
-                <distributed-cache name="default" mode="SYNC" segments="20" owners="1" remote-timeout="30000" start="EAGER">
+                <distributed-cache name="default" mode="SYNC" segments="20" owners="3" remote-timeout="30000" start="EAGER">
                     <locking acquire-timeout="30000" concurrency-level="1000" striping="false"/>
                     <transaction mode="NONE"/>
                     <file-store shared="false" fetch-state="true" passivation="false" path="/cache" max-entries="5000">
